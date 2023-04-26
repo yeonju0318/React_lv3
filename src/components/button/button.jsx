@@ -38,6 +38,9 @@ const StyledButton = styled.button`
   font-weight: ${(props) => props.fontweight};
   width: ${(props) => props.width};
   height: ${(props) => props.height};
+  &:active {
+    filter: brightness(60%);
+  }
 `;
 
 export const ButtonContainor = styled.div`
