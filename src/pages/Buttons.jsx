@@ -41,6 +41,7 @@ function Buttons() {
           onClick={() => prompt("어렵나요?")}
           borderColor="#FAB1A0"
           backgroundColor="#ffffff"
+          fontColor="#d63031"
           fontWeight="bold"
           width="250px"
           height="50px"
@@ -51,6 +52,7 @@ function Buttons() {
         <Button
           borderColor="#FAB1A0"
           backgroundColor="#FAB1A0"
+          fontColor="#d63031"
           width="130px"
           height="45px"
         >
@@ -59,6 +61,7 @@ function Buttons() {
         <Button
           borderColor="#FAB1A0"
           backgroundColor="#FAB1A0"
+          fontColor="#d63031"
           width="100px"
           height="40px"
         >
