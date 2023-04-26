@@ -29,8 +29,8 @@ const H1 = styled.h1`
 `;
 
 function BtnContainer() {
-  const priBtnClickHandler = () => alert(`버튼을 만들어보세요!`);
-  const negBtnClickHandler = () => prompt(`어렵나요?`);
+  const priBtnClickHandler = () => alert(`버튼을 만들어보세요!😊`);
+  const negBtnClickHandler = () => prompt(`어렵나요?😧`);
   return (
     <BtnSection>
       <H1>Button</H1>
