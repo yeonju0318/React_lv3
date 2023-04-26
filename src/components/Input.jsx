@@ -62,7 +62,7 @@ const InputForm = styled.form`
 const H1 = styled.h1`
   display: block;
   font-size: 2em;
-  margin: 10px;
+  margin: 20px;
   font-weight: bold;
 `;
 
