@@ -16,34 +16,36 @@ function Select({}) {
   };
 
   return (
-    <Wrap>
-      <H1>Select</H1>
-      <StSelectBtn onClick={openList}>
-        <div> {selectedItem}</div>
-        <Icon>▼</Icon>
-      </StSelectBtn>
-      {listShow && (
-        <div>
-          <Options>
-            {option.map((item) => {
-              return (
-                <StSelectBtn
-                  onClick={() => selectOption(item)}
-                  onMouseOver={(event) =>
-                    (event.target.style.background = "#e4e4dc")
-                  }
-                  onMouseOut={(event) => {
-                    event.target.style.background = "#ffffff";
-                  }}
-                >
-                  {item}
-                </StSelectBtn>
-              );
-            })}
-          </Options>
-        </div>
-      )}
-    </Wrap>
+    <Outside>
+      <Wrap onClick={openList}>
+        <H1>Select</H1>
+        <StSelectBtn onClick={openList}>
+          <div> {selectedItem}</div>
+          <Icon>▼</Icon>
+        </StSelectBtn>
+        {listShow && (
+          <div>
+            <Options>
+              {option.map((item) => {
+                return (
+                  <StSelectBtn
+                    onClick={() => selectOption(item)}
+                    onMouseOver={(event) =>
+                      (event.target.style.background = "#e4e4dc")
+                    }
+                    onMouseOut={(event) => {
+                      event.target.style.background = "#ffffff";
+                    }}
+                  >
+                    {item}
+                  </StSelectBtn>
+                );
+              })}
+            </Options>
+          </div>
+        )}
+      </Wrap>
+    </Outside>
   );
 }
 
@@ -85,4 +87,9 @@ const H1 = styled.h1`
   font-size: 2em;
   margin: 20px;
   font-weight: bold;
+`;
+
+const Outside = styled.div`
+  width: 100%;
+  height: 100%;
 `;
