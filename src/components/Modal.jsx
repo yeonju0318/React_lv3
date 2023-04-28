@@ -18,6 +18,7 @@ function Modal() {
   const closeSecondModal = () => {
     setModal2(false);
   };
+
   return (
     <div>
       <H1>Modal</H1>

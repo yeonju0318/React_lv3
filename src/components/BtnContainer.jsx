@@ -59,7 +59,7 @@ function BtnContainer() {
           onClick={negBtnClickHandler}
         >
           Large Negative Button &nbsp;
-          <SlBell />
+          <SlBell color="black" size="15" />
         </Btn>
         <Btn size="medium" color="negative">
           Medeium
