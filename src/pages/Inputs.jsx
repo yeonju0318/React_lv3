@@ -21,7 +21,7 @@ function Inputs() {
   };
 
   const save = () => {
-    alert(`name : ${name} price : ${price}`);
+    alert(`name : ${name} price : ${price.replace(/,/g, "")}`);
   };
 
   return (
